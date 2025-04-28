@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alex Morgan | UI/UX Designer</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header" id="header">
+        <div class="container">
+            <a href="#" class="logo">
+                <span class="logo-accent">Troy Schneider
+            </a>
+            <nav>
+                <button class="menu-toggle" id="menuToggle">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+                <ul class="nav-links" id="navLinks">
+                    <li><a href="#home" class="nav-link">Home</a></li>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#portfolio" class="nav-link">Portfolio</a></li>
+                    <li><a href="#experience" class="nav-link">Experience</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="container">
+            <div class="hero-content">
+                <p class="hero-greeting">Hello, my name is</p>
+                <h1 class="hero-title">Troy Schneider</h1>
+                <h2 class="hero-subtitle">UI/UX Designer & Creative Developer</h2>
+                <p class="hero-description">I craft intuitive digital experiences through thoughtful design and elegant code. Specializing in creating user-centered interfaces that merge aesthetics with functionality.</p>
+                <div class="hero-buttons">
+                    <a href="#portfolio" class="btn btn-primary">View My Work</a>
+                    <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+                </div>
+                <ul class="social-links">
+                    <li><a href="#" class="social-link"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                    <li><a href="#" class="social-link"><i class="fa-brands fa-youtube"></i></a></li>
+                    <li><a href="#" class="social-link"><i class="fa-brands fa-github"></i></a></li>
+                    <li><a href="#" class="social-link"><i class="fa-brands fa-dribbble"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">About Me</h2>
+            </div>
+            <div class="about-content">
+                <div class="about-image fade-up">
+                    <img src="./assets/IMG_5380.jpg" alt="Alex Morgan">
+                </div>
+                <div class="about-text fade-up">
+                    <h3>Creating Common Sense Digital experiences</h3>
+                    <p>With over 3 years of experience in UI/UX design, I specialize in creating user-driven digital products that prioritize both aesthetics and functionality. My design philosophy puts the user first, combining end-user intuitive designs and intentional digital product architecture to balance business decisions with customer experience.</p>
+                    <p>While simultaneously serving active duty military, I worked with various startups to create innovative digital products and interfaces across multiple industries including gaming software, clinical healthcare & education, and event services. Following release from active duty, I became a Supply Chain Manager for Amazon's Grocery logistics team. I also started a YouTube channel named Bitmute in 2025, creating longform educational content around HTML, CSS, and Javascript front-end development</p>
+                    <p>When I'm not developing, you can find me training for Ironman Triathlons, creating content for my YouTube channel, or spending time with my wife and other people I love.</p>
+                    
+                    <div class="skills">
+                        <h4 class="skills-title">My Expertise</h4>
+                        <div class="skills-list">
+                            <span class="hard-skill-tag">UI Design</span>
+                            <span class="hard-skill-tag">Figma</span>
+                            <span class="hard-skill-tag">HTML CSS Tailwind</span>
+                            <span class="hard-skill-tag">SQL</span>
+                            <span class="hard-skill-tag">Python</span>
+                            <span class="hard-skill-tag">Frontend Development</span>
+                            <span class="skill-tag">Design Thinking</span>
+                            <span class="hard-skill-tag">Premier Pro</span>
+                            <span class="skill-tag">Sketch</span>
+                            <span class="skill-tag">Design Systems</span>
+                            <span class="skill-tag">Functiontional Prototyping</span>
+                            <span class="skill-tag">Wireframing</span>
+                            <span class="skill-tag">User Testing</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section class="portfolio" id="portfolio">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">My Work</h2>
+            </div>
+            
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="ui-design">UI/UX Design</button>
+                <button class="filter-btn" data-filter="app-design">App Design</button>
+                <button class="filter-btn" data-filter="branding">Branding</button>
+                <button class="filter-btn" data-filter="ux-research">Product Design</button>
+            </div>
+            
+            <div class="portfolio-grid">
+                <!-- Portfolio Item 1 -->
+                <div class="portfolio-item fade-up" data-category="app-design">
+                    <div class="portfolio-item-img">
+                        <img src="/api/placeholder/600/400" alt="Healthcare Matters Platform">
+                    </div>
+                    <div class="portfolio-item-content">
+                        <h3 class="portfolio-item-title">Healthcare Matters (HCM) Certification Platform</h3>
+                        <div class="portfolio-skills-list">
+                            <span class="portfolio-hard-skill-tag">UI/UX Design</span>
+                            <span class="portfolio-hard-skill-tag">Figma</span>
+                            <span class="portfolio-hard-skill-tag">App Design</span>
+                            <span class="portfolio-skill-tag">Web Design</span>
+                            <span class="portfolio-skill-tag">Next.js</span>
+                            <span class="portfolio-skill-tag">Frontend Development</span>
+                        </div>
+                        <p class="portfolio-item-description">Prototypes, designed, and deployed 3 versions of the HCM Prep website and web application on two man full-stack development team</p>
+                        <a href="#" class="portfolio-item-link">View HCM Prep Website<i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                
+                <!-- Portfolio Item 2 -->
+                <div class="portfolio-item fade-up" data-category="ui-design">
+                    <div class="portfolio-item-img">
+                        <img src="/api/placeholder/600/400" alt="Algoleaf Website">
+                    </div>
+                    <div class="portfolio-item-content">
+                        <h3 class="portfolio-item-title">Algoleaf, LLC Corporate Website</h3>
+                        <div class="portfolio-skills-list">
+                            <span class="portfolio-hard-skill-tag">Figma</span>
+                            <span class="portfolio-skill-tag">Web Design</span>
+                            <span class="portfolio-skill-tag">HTML CSS JS</span>
+                            <span class="portfolio-skill-tag">Frontend</span>
+                        </div>
+                        <p class="portfolio-item-description">Designed and deployed a simple, professionally driven corporate website for Algoleaf, a healthcare technology company developing modern clinical data platforms and research infrastructure.</p>
+                        <a href="#" class="portfolio-item-link">View Algoleaf Coporate Homepage <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                
+                <!-- Portfolio Item 3 -->
+                <div class="portfolio-item fade-up" data-category="ux-research">
+                    <div class="portfolio-item-img">
+                        <img src="/api/placeholder/600/400" alt="Bitmute YouTube Channel">
+                    </div>
+                    <div class="portfolio-item-content">
+                        <h3 class="portfolio-item-title">Frontend & UI Design YouTube Channel</h3>
+                        <div class="portfolio-skills-list">
+                            <span class="portfolio-skill-tag">Web Design</span>
+                            <span class="portfolio-skill-tag">UI/UX Design</span>
+                            <span class="portfolio-hard-skill-tag">HTML CSS JS</span>
+                            <span class="portfolio-hard-skill-tag">Frontend Web Developement</span>
+                        </div>
+                        <p class="portfolio-item-description">Launched my YouTube channel Bitmute in 2025, posting long-form coding sessions showcasing personal designs and community spotlights to expose unique and viral design concepts. In 30 days, the channel gained 150 subscribers and over 16,000 views.</p>
+                        <a href="#" class="portfolio-item-link">View Bitmute YouTube Channel <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                
+                <!-- Portfolio Item 4 -->
+                <div class="portfolio-item fade-up" data-category="City Connect Homepage">
+                    <div class="portfolio-item-img">
+                        <img src="/api/placeholder/600/400" alt="Tech Startup Branding">
+                    </div>
+                    <div class="portfolio-item-content">
+                        <h3 class="portfolio-item-title">City Connect Startup - Event Hosting Website</h3>
+                        <div class="portfolio-skills-list">
+                            <span class="portfolio-hard-skill-tag">Web Design</span>
+                            <span class="portfolio-hard-skill-tag">Wix Website Management</span>
+                            <span class="portfolio-skill-tag">UI/UX Design</span>
+                            <span class="portfolio-skill-tag">End-to-End Workflow Automation</span>
+                        </div>
+                        <p class="portfolio-item-description">Designed complete website prototypes for City Connect's first website, including events and community management pages, live calendars, and community galleries showcasing the brands iconic events.</p>
+                        <a href="#" class="portfolio-item-link">View City Connect Events Homepage <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                
+                <!-- Portfolio Item 5 -->
+                <div class="portfolio-item fade-up" data-category="Nashville Connect Branding & Social Media Revamp">
+                    <div class="portfolio-item-img">
+                        <img src="/api/placeholder/600/400" alt="Fitness Tracking App">
+                    </div>
+                    <div class="portfolio-item-content">
+                        <h3 class="portfolio-item-title">Nashville Connect Branding & Social Media</h3>
+                        <div class="portfolio-skills-list">
+                            <span class="portfolio-skill-tag">Logo Branding</span>
+                            <span class="portfolio-skill-tag">Brand Identity</span>
+                            <span class="portfolio-skill-tag">Social Media Branding</span>
+                            <span class="portfolio-hard-skill-tag">Figma</span>
+                            <span class="portfolio-hard-skill-tag">Premier Pro</span>
+                        </div>
+                        <p class="portfolio-item-description">For City Connect's subsidiary brand, I designed and launched logo branding designs for Nashville connect. Additionally, I revamped and designed social media post templates, and produced ongoing promotions for their weekly events.</p>
+                        <a href="#" class="portfolio-item-link">View Nashville Connect Instagram <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                
+                <!-- Portfolio Item 6 -->
+                <div class="portfolio-item fade-up" data-category="Amazon AGL Python Apps Showcase">
+                    <div class="portfolio-item-img">
+                        <img src="/api/placeholder/600/400" alt="Smart Home Dashboard">
+                    </div>
+                    <div class="portfolio-item-content">
+                        <h3 class="portfolio-item-title">Amazon Grocery Logistics Python Application Interface</h3>
+                        <div class="portfolio-skills-list">
+                            <span class="portfolio-skill-tag">UX Design</span>
+                            <span class="portfolio-hard-skill-tag">Python</span>
+                            <span class="portfolio-hard-skill-tag">Pandas</span>
+                            <span class="portfolio-hard-skill-tag">NumPy</span>
+                            <span class="portfolio-skill-tag">Tkinter</span>
+                        </div>
+                        <p class="portfolio-item-description">Designed and developed simple, internal automation tools for my current role Amazon. The tools featured simple UI elements that improved user experience quality. These tools averaged a 95% time saving for the stakeholders that used it.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section class="experience" id="experience">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">My Experience</h2>
+            </div>
+            
+            <div class="timeline">
+                <!-- Timeline Item 1 -->    
+                <div class="timeline-item fade-up">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-date">2024 - Present</div>
+                    <div class="timeline-content">
+                        <h3 class="timeline-title">Supply Chain Manager, North America AGL</h3>
+                        <p class="timeline-company">Amazon, Nashville, TN</p>
+                        <p class="timeline-description">Designed user interfaces for web and mobile applications across various industries. Conducted user research, created wireframes, prototypes, and implemented design systems to ensure consistent user experiences.</p>
+                    </div>
+                </div>
+
+                <!-- Timeline Item 2 -->
+                <div class="timeline-item fade-up">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-date">2023 - Present</div>
+                    <div class="timeline-content">
+                        <h3 class="timeline-title">Creative Director</h3>
+                        <p class="timeline-company">Algoleaf, Austin, TX</p>
+                        <p class="timeline-description">Leading design initiatives for enterprise clients, managing a team of designers, and establishing design systems and processes. Collaborated with product managers and developers to deliver exceptional digital experiences.</p>
+                    </div>
+                    <div class="timeline-content">
+                        <h3 class="timeline-title">Principle Frontend Designer</h3>
+                        <p class="timeline-company">City Connect LLC, Nashville, TN</p>
+                        <p class="timeline-description">Leading design initiatives for enterprise clients, managing a team of designers, and establishing design systems and processes. Collaborated with product managers and developers to deliver exceptional digital experiences.</p>
+                    </div>
+                </div>
+                
+                <!-- Timeline Item 3 -->
+                <div class="timeline-item fade-up">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-date">2019 - 2025</div>
+                    <div class="timeline-content">
+                        <h3 class="timeline-title">US Army Logistics Officer</h3>
+                        <p class="timeline-company">United States Army, various locations</p>
+                        <p class="timeline-description">Focused on creating user-centered design solutions for financial technology products. Collaborated with product managers to define requirements and worked closely with developers to ensure design integrity.</p>
+                    </div>
+                </div>
+                
+                <!-- Timeline Item 4 -->
+                <div class="timeline-item fade-up">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-date">2021 - 2024</div>
+                    <div class="timeline-content">
+                        <h3 class="timeline-title">Software Testing & Operations Manager</h3>
+                        <p class="timeline-company">Legacy Arcade, Orange County, CA</p>
+                        <p class="timeline-description">Created visual designs for websites and applications, focusing on brand consistency and user engagement. Collaborated with UX designers to implement intuitive and aesthetically pleasing interfaces.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="gallery" id="gallery">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Design Gallery</h2>
+            </div>
+        
+            <div class="gallery-container fade-up">
+                <!-- Gallery Controls -->
+                <div class="gallery-controls">
+                    <button class="gallery-arrow gallery-prev">
+                        <i class="fa-solid fa-chevron-left"></i>
+                    </button>
+                    <div class="gallery-indicators">
+                        <span class="gallery-indicator active" data-index="0"></span>
+                        <span class="gallery-indicator" data-index="1"></span>
+                        <span class="gallery-indicator" data-index="2"></span>
+                    </div>
+                    <button class="gallery-arrow gallery-next">
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </button>
+                </div>
+            
+                <!-- Featured Gallery -->
+                <div class="gallery-featured">
+                    <div class="gallery-featured-item active" data-index="0">
+                        <div class="gallery-featured-image">
+                            <img src="/api/placeholder/1200/800" alt="HCM Web App Complete Redesign">
+                        </div>
+                        <div class="gallery-featured-overlay">
+                            <h3 class="gallery-featured-title">Complete Web App Redesign</h3>
+                            <p class="gallery-featured-description">Complete overhaul of HCM Prep's user interface and web application, including integration of product marketplace features to feature the platforms growing libary of education products .</p>
+                            <a href="#" class="btn btn-outline">View Details</a>
+                        </div>
+                    </div>
+                
+                    <div class="gallery-featured-item" data-index="1">
+                        <div class="gallery-featured-image">
+                            <img src="/api/placeholder/1200/800" alt="HCM Prep UX & Product Design">
+                        </div>
+                        <div class="gallery-featured-overlay">
+                            <h3 class="gallery-featured-title">E-commerce Website Design</h3>
+                            <p class="gallery-featured-description">Designed and delivered complete Pharmacy Technician Certification material, including 466 pages of production PDF lessons, and 66 lesson slide decks.</p>
+                            <a href="#" class="btn btn-outline">View Details</a>
+                        </div>
+                    </div>
+                
+                    <div class="gallery-featured-item" data-index="2">
+                        <div class="gallery-featured-image">
+                            <img src="/api/placeholder/1200/800" alt="Design System Creation">
+                        </div>
+                        <div class="gallery-featured-overlay">
+                            <h3 class="gallery-featured-title">Nashville Connect Branding & Marketing</h3>
+                            <p class="gallery-featured-description">Provided consulting, mentorship, and production branding for Nashville Connect's company logo, branding, and social media.</p>
+                            <a href="#" class="btn btn-outline">View Details</a>
+                        </div>
+                    </div>
+                </div>
+            
+                <!-- Gallery Grid -->
+                <div class="gallery-grid">
+                    <div class="gallery-item" data-category="web">
+                        <div class="gallery-item-image">
+                            <img src="/api/placeholder/600/400" alt="Dashboard Interface">
+                        </div>
+                        <div class="gallery-item-overlay">
+                            <h4 class="gallery-item-title">HCM Prep Dashboard</h4>
+                            <p class="gallery-item-category">Web Design</p>
+                        </div>
+                    </div>
+                
+                    <div class="gallery-item" data-category="mobile">
+                        <div class="gallery-item-image">
+                            <img src="/api/placeholder/600/400" alt="Mobile App Design">
+                        </div>
+                        <div class="gallery-item-overlay">
+                            <h4 class="gallery-item-title">HCM Prep Education Web Application</h4>
+                            <p class="gallery-item-category">Mobile Design</p>
+                        </div>
+                    </div>
+                
+                    <div class="gallery-item" data-category="branding">
+                        <div class="gallery-item-image">
+                            <img src="/api/placeholder/600/400" alt="Brand Identity">
+                        </div>
+                        <div class="gallery-item-overlay">
+                            <h4 class="gallery-item-title">Bitmute Most Viewed YouTube Video</h4>
+                            <p class="gallery-item-category">Brand Identity</p>
+                        </div>
+                    </div>
+                
+                    <div class="gallery-item" data-category="web">
+                        <div class="gallery-item-image">
+                            <img src="/api/placeholder/600/400" alt="Web Design">
+                        </div>
+                        <div class="gallery-item-overlay">
+                            <h4 class="gallery-item-title">City Connect Website Event Management Page</h4>
+                            <p class="gallery-item-category">Web Design</p>
+                        </div>
+                    </div>
+                
+                    <div class="gallery-item" data-category="illustration">
+                        <div class="gallery-item-image">
+                            <img src="/api/placeholder/600/400" alt="Digital Illustration">
+                        </div>
+                        <div class="gallery-item-overlay">
+                            <h4 class="gallery-item-title">Nashville Connect Event Email Confirmations</h4>
+                            <p class="gallery-item-category">Digital Art</p>
+                        </div>
+                    </div>
+                
+                    <div class="gallery-item" data-category="mobile">
+                        <div class="gallery-item-image">
+                            <img src="/api/placeholder/600/400" alt="Mobile Design">
+                        </div>
+                        <div class="gallery-item-overlay">
+                            <h4 class="gallery-item-title">Legacy Arcade Mobile Website Designs</h4>
+                            <p class="gallery-item-category">Mobile Design</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Contact Me</h2>
+            </div>
+            
+            <div class="contact-container">
+                <div class="contact-info fade-up">
+                    <h3 class="contact-info-title">Let's See What We Can Accomplish</h3>
+                    <p>I'm always open to discussing new roles, projects, creative ideas or opportunities to be part of your vision.</p>
+                    
+                    <ul class="contact-details">
+                        <li style="margin-top: 30px;">
+                            <i class="fa-solid fa-envelope" style="margin-right: 10px;"></i>
+                            <span>schneidert500@gmail.com</span>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-phone" style="margin-right: 10px;"></i>
+                            <span>+1 (949) 633-4759</span>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-location-dot" style="margin-right: 10px;"></i>
+                            <span>Nashville, Tennessee</span>
+                        </li>
+                    </ul>
+                    
+                    <ul class="social-links" style="margin-top: -10px;">
+                        <li><a href="#" class="social-link"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                        <li><a href="#" class="social-link"><i class="fa-brands fa-youtube"></i></a></li>
+                        <li><a href="#" class="social-link"><i class="fa-brands fa-github"></i></a></li>
+                        <li><a href="#" class="social-link"><i class="fa-brands fa-dribbble"></i></a></li>
+                    </ul>
+                </div>
+                
+                <div class="contact-form fade-up">
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <label for="name" class="form-label">Your Name</label>
+                            <input type="text" id="name" class="form-control" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email" class="form-label">Your Email</label>
+                            <input type="email" id="email" class="form-control" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="subject" class="form-label">Subject</label>
+                            <input type="text" id="subject" class="form-control" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message" class="form-label">Your Message</label>
+                            <textarea id="message" class="form-control" required></textarea>
+                        </div>
+                        
+                        <button type="submit" class="submit-btn">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-logo">
+                <span class="logo-accent">Troy Schneider
+            </div>
+            
+            <ul class="footer-links">
+                <li><a href="#home" class="footer-link">Home</a></li>
+                <li><a href="#about" class="footer-link">About</a></li>
+                <li><a href="#portfolio" class="footer-link">Portfolio</a></li>
+                <li><a href="#experience" class="footer-link">Experience</a></li>
+                <li><a href="#contact" class="footer-link">Contact</a></li>
+            </ul>
+            
+            <div class="footer-social">
+                <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                <a href="#"><i class="fa-brands fa-github"></i></a>
+                <a href="#"><i class="fa-brands fa-dribbble"></i></a>
+            </div>
+            
+            <p class="copyright">© 2025 algoleaf, LLC. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Font Awesome -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"></script>
+    
+    <!-- Custom JavaScript -->
+    <script src="main.js"></script>
+</body>
+</html>
