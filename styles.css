@@ -32,7 +32,7 @@ html {
 }
 
 body {
-    font-family: 'DM Sans', sans-serif;
+    font-family: "Lato", sans-serif;
     background-color: var(--color-bg-dark);
     color: var(--color-text-light);
     line-height: 1.6;
@@ -78,6 +78,7 @@ img {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 2rem;
+    
 }
 
 /* Header Styles */
@@ -108,9 +109,9 @@ img {
 .logo {
     display: flex;
     align-items: center;
-    font-family: 'Raleway', sans-serif;
-    font-weight: 700;
-    font-size: 1.5rem;
+    font-family: "Jersey 10", sans-serif;
+    font-weight: 100;
+    font-size: 2.5rem;
     color: var(--color-text-light);
 }
 
@@ -161,6 +162,7 @@ img {
         radial-gradient(circle at 80% 80%, rgba(229, 124, 216, 0.2) 0%, transparent 25%);
     position: relative;
     overflow: hidden;
+    
 }
 
 .hero::before {
@@ -197,17 +199,18 @@ img {
 }
 
 .hero-subtitle {
-    font-family: 'Playfair Display', serif;
-    font-size: 3rem;
+    font-family: "Jersey 10", sans-serif;
+    font-size: 3.5rem;
     margin-bottom: 2rem;
-    color: var(--color-secondary);
+    font-weight: 100;
+    color: var(--color-primary);
     opacity: 0;
     animation: fadeUp 0.8s var(--ease) forwards 0.6s;
 }
 
 .hero-description {
-    font-size: 1.2rem;
-    max-width: 600px;
+    font-size: 1.5rem;
+    max-width: 700px;
     margin-bottom: 2.5rem;
     color: var(--color-text-muted);
     opacity: 0;
@@ -278,16 +281,7 @@ img {
     overflow: hidden;
 }
 
-.about::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100px;
-    background-color: var(--color-bg-dark);
-    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 0);
-}
+
 
 .section-header {
     text-align: center;
@@ -754,6 +748,7 @@ img {
     height: 100%;
     opacity: 0;
     visibility: hidden;
+    object-fit: cover;
     transition: opacity 0.6s var(--ease), visibility 0.6s var(--ease);
 }
 
@@ -783,7 +778,7 @@ img {
     bottom: 0;
     left: 0;
     right: 0;
-    padding: 3rem;
+    padding: 5rem;
     background: linear-gradient(to top, rgba(16, 21, 31, 0.4) 100%, transparent 50%);
     display: flex;
     flex-direction: column;
@@ -807,9 +802,10 @@ img {
 }
 
 .gallery-featured-description {
-    font-size: 1rem;
+    font-size: 1.5rem;
     margin-bottom: 1.5rem;
-    font-weight: 500;
+    font-weight: 400;
+    line-height: 1.5;
     color: white;
     max-width: 600px;
 }
@@ -846,6 +842,18 @@ img {
     box-shadow: var(--shadow-md);
     cursor: pointer;
     transition: all 0.3s var(--ease);
+    object-fit: cover;
+}
+
+.gallery-item img {
+    position: relative;
+    height: 350px;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: var(--shadow-md);
+    cursor: pointer;
+    transition: all 0.3s var(--ease);
+    object-fit: cover;
 }
 
 .gallery-item:hover {
@@ -861,7 +869,7 @@ img {
 .gallery-item-image svg {
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit: fill;
     transition: transform 0.5s var(--ease);
 }
 
@@ -914,7 +922,7 @@ img {
 
 @media (max-width: 768px) {
     .gallery-featured {
-        height: 350px;
+        height: 450px;
     }
     
     .gallery-featured-overlay {
@@ -936,18 +944,30 @@ img {
     }
     
     .gallery-featured {
-        height: 300px;
+        height: 350px;
+    }
+
+    .gallery-item {
+        height: 100%;
+    }
+
+    .gallery-featured-overlay {
+        padding: 3rem;
     }
     
     .gallery-featured-title {
         font-size: 1.5rem;
+    }
+
+    .gallery-item-overlay {
+        margin-bottom: px;
     }
 }
 
 
 /* Contact Section */
 .contact {
-    padding: 8rem 0;
+    padding: 1rem 0rem 5rem 0rem;
     margin-top: -80px;
     background-color: var(--color-bg-dark);
     position: relative;
@@ -1057,9 +1077,11 @@ textarea.form-control {
 }
 
 .footer-logo {
-    font-size: 2rem;
-    font-weight: 700;
+    font-size: 4rem;
+    font-weight: 500;
+    font-family: "Jersey 10", sans-serif;
     margin-bottom: 1.5rem;
+    cursor: pointer;
 }
 
 .footer-links {
@@ -1068,11 +1090,13 @@ textarea.form-control {
     list-style: none;
     gap: 2rem;
     margin-bottom: 2rem;
+    text-decoration: none;
 }
 
 .footer-link {
     color: var(--color-text-muted);
     transition: color 0.3s var(--ease);
+    text-decoration: none;
 }
 
 .footer-link:hover {
@@ -1234,11 +1258,11 @@ textarea.form-control {
 
 @media (max-width: 576px) {
     .hero-title {
-        font-size: 2.5rem;
+        font-size: 3.5rem;
     }
             
     .hero-subtitle {
-        font-size: 1.5rem;
+        font-size: 2.5rem;
     }
             
     .btn {

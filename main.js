@@ -118,7 +118,7 @@ document.addEventListener('DOMContentLoaded', function() {
             nextIndex = 0;
         }
         updateGallery(nextIndex);
-    }, 3500);
+    }, 15000);
     
     // Pause auto slide on hover
     const galleryFeatured = document.querySelector('.gallery-featured');
@@ -157,16 +157,6 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
         
-// Form submission
-const contactForm = document.getElementById('contactForm');
-contactForm.addEventListener('submit', (e) => {
-    e.preventDefault();
-    // In a real implementation, you would send the form data to a server
-    // For demo purposes, we'll just show an alert
-    alert('Thank you for your message! I will get back to you soon.');
-    contactForm.reset();
-});
-        
 // Scroll animation for fade-up elements
 const fadeElements = document.querySelectorAll('.fade-up');
         
@@ -201,3 +191,11 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         }
     });
 });
+
+document.getElementById('video-container').addEventListener('click', function () {
+    this.innerHTML = `<iframe width="100%" height="315" src="https://www.youtube.com/watch?v=-f3LIOsxw70" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>`;
+  });
+
+document.getElementById('video-container-1').addEventListener('click', function () {
+    this.innerHTML = `<iframe width="100%" height="315" src="https://www.youtube.com/watch?v=CzFzhmQb2NA" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>`;
+  });
