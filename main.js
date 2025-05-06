@@ -33,19 +33,19 @@ document.querySelectorAll('.nav-link').forEach(link => {
 // Portfolio filtering
 const filterButtons = document.querySelectorAll('.filter-btn');
 const portfolioItems = document.querySelectorAll('.portfolio-item');
-        
+
 filterButtons.forEach(button => {
     button.addEventListener('click', () => {
         // Remove active class from all buttons
         filterButtons.forEach(btn => btn.classList.remove('active'));
-        // Add active class to clicked button
         button.classList.add('active');
-                
-        // Filter portfolio items
+
         const filter = button.getAttribute('data-filter');
-                
+
         portfolioItems.forEach(item => {
-            if (filter === 'all' || item.getAttribute('data-category') === filter) {
+            const categories = item.getAttribute('data-category').split(' ');
+
+            if (filter === 'all' || categories.includes(filter)) {
                 item.style.display = 'block';
             } else {
                 item.style.display = 'none';
@@ -53,6 +53,7 @@ filterButtons.forEach(button => {
         });
     });
 });
+
 
 // Gallery Slider Functionality
 document.addEventListener('DOMContentLoaded', function() {
