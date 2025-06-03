@@ -1246,8 +1246,14 @@ textarea.form-control {
     margin-left: 21px;
 }
 
-
-
+.showcase-1-images svg {
+    width: 100%;
+    scale: 89%;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    display: flex;
+}
 
 
 
